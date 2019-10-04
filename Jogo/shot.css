@@ -1,0 +1,41 @@
+div { float: left}
+
+html {
+     /* cursor: none; */
+     cursor: crosshair;
+}
+
+body {
+    background: url(/Jogo/img/dust2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
+  .pointsboards {
+    width: 150px;
+    height: 100px;
+    background-color:white;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    visibility: hidden;
+  }
+
+  .buttonStart{
+    margin-left: 50%;
+    margin-top: 50%;
+  }
+
+  .ranking{
+    visibility: hidden;
+    background-color: white;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
