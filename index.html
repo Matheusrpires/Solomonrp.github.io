@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Game</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="shot.css">
+</head>
+
+<body>
+    <div id='pointsboard' class='pointsboards'>
+        <p class="points">Pontos: 0</p>
+        <p class="timer">Tempo Restante: 30s</p>
+    </div>
+
+    <h1 style="text-align: center">Atire para começar</h1>
+
+    <div id="getName" class="GetNames">
+        TagName:<input type="text" placeholder="Tag" name="TagName" id="tagName">
+        <button onclick="starts()">Começar</button>
+    </div>
+
+
+
+    <div id='img' class='img'>
+        <img src="/Jogo/img/eneme.png" id='ball1' class="ball" style="position: fixed; width: width=device-width/2; height: width=device-width/2">
+        <img src="/Jogo/img/eneme.png" id='ball2' class="ball" style="position: fixed; width: width=device-width/2; height: width=device-width/2">
+        <img src="/Jogo/img/eneme.png" id='ball3' class="ball" style="position: fixed; width: width=device-width/2; height: width=device-width/2">
+        <img src="/Jogo/img/eneme.png" id='ball4' class="ball" style="position: fixed; width: width=device-width/2; height: width=device-width/2">
+        <img src="/Jogo/img/eneme.png" id='ball5' class="ball" style="position: fixed; width: width=device-width/2; height: width=device-width/2">
+    </div>
+
+    <div id="ranking" class="ranking">
+        <h5>Ranking!!</h5>
+        <p class="pointsR">Seus pontos: </p>
+
+    </div>
+
+
+    <script type="text/javascript" src="jogoLogic.js">
+
+    </script>
+</body>
+
+</html>
