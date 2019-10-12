@@ -8,31 +8,57 @@
 </head>
 
 <body>
-    <div id='pointsboard' class='pointsboards'>
+    <div id='pointsboard' class='pointsboards' style="display: inline-block">
         <p class="points">Pontos: 0</p>
         <p class="timer">Tempo Restante: 30s</p>
     </div>
 
-    <h1 style="text-align: center">Atire para começar</h1>
+    <div style="display: inline-block">
+        <img src="/img/grenadeExplosion.png" id='grenadeIcon' onclick="grenade()" class="grenade grenadeItem">
+    </div>
 
-    <div id="getName" class="GetNames">
-        TagName:<input type="text" placeholder="Tag" name="TagName" id="tagName">
-        <button onclick="starts()">Começar</button>
+    
+    <div id="getName" class="GetNames" style="">
+        <h1 class="texto" style="text-align: center;">Treine sua mira</h1>
+        <p class="texto">Dicas:</p>
+        <p class="texto">- A velocidade aumenta em relação aos pontos</p>
+        <p class="texto">- Se acertar alguem do seu time o jogo acaba</p>
+        <p class="texto">- Tem granada explosiva e de luz</p>
+        <input class="nameField" type="text" placeholder="Coloque seu apelido" name="TagName" id="tagName"></br>
+        <button class="login" onclick="starts()">Começar</button>
     </div>
 
 
 
     <div id='img' class='img'>
-        <img src="/Jogo/img/eneme.png" id='ball1' class="ball" style="position: fixed; width: width=device-width/2; height: width=device-width/2">
-        <img src="/Jogo/img/eneme.png" id='ball2' class="ball" style="position: fixed; width: width=device-width/2; height: width=device-width/2">
-        <img src="/Jogo/img/eneme.png" id='ball3' class="ball" style="position: fixed; width: width=device-width/2; height: width=device-width/2">
-        <img src="/Jogo/img/eneme.png" id='ball4' class="ball" style="position: fixed; width: width=device-width/2; height: width=device-width/2">
-        <img src="/Jogo/img/eneme.png" id='ball5' class="ball" style="position: fixed; width: width=device-width/2; height: width=device-width/2">
+        <img src="/img/eneme.png" id='ball1' class="ball enemies"
+            style="position: fixed; width: device-width/2; height: device-width/2">
+        <img src="/img/eneme.png" id='ball2' class="ball enemies"
+            style="position: fixed; width: device-width/2; height: device-width/2">
+        <img src="/img/eneme.png" id='ball3' class="ball enemies"
+            style="position: fixed; width: device-width/2; height: device-width/2">
+        <img src="/img/eneme.png" id='ball4' class="ball enemies"
+            style="position: fixed; width: device-width/2; height: device-width/2">
+        <img src="/img/eneme.png" id='ball5' class="ball enemies"
+            style="position: fixed; width: device-width/2; height: device-width/2">
+        <img src="/img/friend.png" id='ball6' class="ball friend"
+            style="position: fixed; width: device-width/2; height: device-width/2; ">
+        <img src="/img/time.png" id='ball7' class="ball time"
+            style="position: fixed; width: device-width/2; height: device-width/2; ">
+        <img src="/img/grenadeFlash.png" id='ball8' style="position: fixed; width: 50px; height: 50px; "
+            class="ball flash bang">
+        <img src="/img/grenadeExplosion.png" id='ball9' style="position: fixed; width: 150px; height: 100px; "
+            class="ball flash bang">
+
+    </div>
+
+    <div id="flashba" class="flashWhite hidden">
+        teste
     </div>
 
     <div id="ranking" class="ranking">
-        <h5>Ranking!!</h5>
         <p class="pointsR">Seus pontos: </p>
+        <h3 class="texto" style="margin-bottom: 5px">Ranking</h3>
 
     </div>
 

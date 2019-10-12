@@ -1,4 +1,6 @@
-div { float: left}
+div { 
+  float: left
+}
 
 html {
      /* cursor: none; */
@@ -6,7 +8,7 @@ html {
 }
 
 body {
-    background: url(/Jogo/img/dust2.jpg) no-repeat center center fixed;
+    background: url(/img/dust2.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -21,11 +23,26 @@ body {
     text-align: center;
     display: inline-block;
     visibility: hidden;
+
+  }
+
+  .GetNames{
+    background: white;
+    width: 380px;
+    height: 350px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 10px;
+    margin: auto;
+    position: absolute;
+    left: 42%;
+    top: 10%;
   }
 
   .buttonStart{
     margin-left: 50%;
     margin-top: 50%;
+    background: black;
   }
 
   .ranking{
@@ -33,9 +50,95 @@ body {
     background-color: white;
     text-align: center;
     width: 300px;
-    height: 200px;
+    height: 50%;
     border-radius: 5px;
     display: inline-block;
-    margin-right: 20%;
-    margin-left: 20%;
+    /* margin-right: 20%;
+    margin-left: 20%; */
+    margin: auto;
+    position: absolute;
+    left: 42%;
+    top: 10%;
   }
+
+  .enemies {
+    opacity: 0;
+  }
+
+  .friend{
+    visibility: hidden;
+  }
+
+  .time{
+    visibility: hidden;
+  }
+  
+  .flash{
+    visibility: hidden;
+  }
+
+  .flashWhite {
+    background: white; 
+    width: 100%; 
+    height: 540px;
+    color: white;
+    position: absolute;
+  }
+
+  .bang {
+    width: 100px;
+    height: 100px;
+  }
+
+  .visible {
+    visibility: visible;
+    opacity: 1;
+    /* transition: opacity 2s linear; */
+  }
+  .hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+  }
+
+  .nameField{
+    height: 12%;
+    width: 75%;
+    border: 1px solid #d0b17a;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    /* border-bottom-color: black; */
+  }  
+  
+  .login{
+    margin-top: 5%;
+    background: #977335;
+    color: white;
+    width: 75%;
+    height: 13%;
+    border: #977335;
+  }
+
+.texto{
+  color: #977335
+}
+
+p {
+  color: #977335
+}
+
+.ranking > h3 > p {
+  border-bottom: 1px solid #977335;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  width: 100%;
+}
+
+.grenadeItem{
+  position: fixed; 
+  width: 150px; 
+  height: 100px; 
+  display: inline;
+  visibility: hidden;
+}
