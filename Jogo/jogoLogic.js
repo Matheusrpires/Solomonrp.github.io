@@ -34,7 +34,7 @@ function randomImg() {
         topx = Math.floor(Math.random() * (screenHeight - num-50));
         lefty = Math.floor(Math.random() * (screenWidth - num-50));
 
-        img2[i].style.top = topx + 'px';
+        img2[i].style.top = topx + 80 + 'px';
         img2[i].style.left = lefty + 'px';
     }
 }
